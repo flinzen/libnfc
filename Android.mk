@@ -19,6 +19,4 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-include ${ANDROID_BUILD_TOP}/external/libnfc-1.8.0/libnfc/Android.mk
-include ${ANDROID_BUILD_TOP}/external/libnfc-1.8.0/utils/Android.mk
-include ${ANDROID_BUILD_TOP}/external/libnfc-1.8.0/examples/Android.mk
+include $(call all-makefiles-under,$(LOCAL_PATH))
